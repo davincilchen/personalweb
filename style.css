@@ -4,221 +4,218 @@
 }
 
 #nav{        
-    //border: 1px solid red;
-    background-color: pink;
+	//border: 1px solid red;
+	background-color: pink;
 
-    //變動瀏覽列;
-    position: fixed;
-    top: 0;
-    left: 0; 
-    right: 0;  /* why */  /* or  width: 100%;  */
-   
-    
-    z-index: 100;    /* 加上這一行 放在上層 */
+	//變動瀏覽列;
+	position: fixed;
+	top: 0;
+	left: 0; 
+	right: 0;  /* why */  /* or  width: 100%;  */
+
+
+	z-index: 100;    /* 加上這一行 放在上層 */
     
 }
 
 #content{    
-    //border: 1px solid blue;
-    position: relative; /* last-2 */
-    top: 78px;          /* last-2 */
-    padding: 15px;      /* last-2 */ 
+	//border: 1px solid blue;
+	position: relative; /* last-2 */
+	top: 78px;          /* last-2 */
+	padding: 15px;      /* last-2 */ 
 }
 
 .container{
-    //border: 1px solid #ccc;
-    width: 800px;     /* last */
-    margin: 0 auto;   /* last */
+	//border: 1px solid #ccc;
+	width: 800px;     /* last */
+	margin: 0 auto;   /* last */
 }
 
 
 #about, #my-work, #contact-me{
-    //border: 1px solid yellow;
+	//border: 1px solid yellow;
     
 }
 
 #content > .container > div {  /* last-3  第一個div?? 僅僅選擇它的直接的子對象 */ 
-  padding: 78px 0;
+	padding: 78px 0;
 }
 
 
 /* ------------------------  */
 
 .menu li{
-    display: inline-block;
-    
-    list-style-type: none;
-    text-align: center;
-    
-    width: 150px;
-    padding: 10px 0px;
-    
-    border: 1px solid #fff;
-    border-radius: 8px;
-        
-    background-color: #ff9900;
-    color: #fff;    
+	display: inline-block;
+
+	list-style-type: none;
+	text-align: center;
+
+	width: 150px;
+	padding: 10px 0px;
+
+	border: 1px solid #fff;
+	border-radius: 8px;
+
+	background-color: #ff9900;
+	color: #fff;    
     
 }
 
 /* ------------------------  */
 
 .menu a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
+	display: block;
+	color: #fff;
+	text-decoration: none;
 }
 
 li:hover{
-    border: 1px solid #ff6600;
-    background-color: #fff;    
-        
+	border: 1px solid #ff6600;
+	background-color: #fff;            
 }
 
 li:hover a{
-    color: #ff6600;
-    //color:crimson;
-    font-weight: 800;
-    
+	color: #ff6600;
+	//color:crimson;
+	font-weight: 800;
+
 }
 
 /* ---------- 讓 .menu 的按鈕靠右： --------------  */
 .menu {
-  float: right;  /* last-3 */
+	float: right;  /* last-3 */
 }
 
 /* ------------------------  */
 #my-avatar{
-    //border: 1px solid red;
-    float: left;  
-    margin-right:20px;
+	border: 1px solid red;
+	float: left;  
+	margin-right:20px;
 }
 
 #my-avatar img{
-    width: 200px
+	width: 200px
 }
 
 /* ------------------------  */
 
 h1 {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 h3 {
-  margin: 0;
+	margin: 0;
 }
 
 table {
-    font-size: 14px;
-    text-align: left;            
+	font-size: 14px;
+	text-align: left;            
 }
 
 th,td{
-    vertical-align: top;    
+	vertical-align: top;    
 }
 
 td{
-    color: #666;
-    padding-left: 10px;
-    
+	color: #666;
+	padding-left: 10px;
+
 }
 
 
 hr{
-    border: 0.5px solid #eee;    
+	border: 0.5px solid #eee;    
 }
 
 /* ----------my work 區塊2 postion hover --------------  */
 .item{
-    //border: 1px solid red;                    /* 標示用，排版完記得拿掉 */
-    display: inline-block;
-    margin-bottom: 30px;
-    position: relative;    
-    max-width: 30%;  /* change block size */
-    
-
+	//border: 1px solid red;                    /* 標示用，排版完記得拿掉 */
+	display: inline-block;
+	margin-bottom: 30px;
+	position: relative;    
+	max-width: 30%;  /* change block size */    
 }
 
 .item-info{
-    //border: 1px solid red;                    /* 標示用，排版完記得拿掉 */
-    background-color: rgba(255,255,255,.9);   /* 背景半透明 */
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 100%;    
-    
-    text-align: center;
-    padding: 25px 10px;
-    
-    //opacity: 0;         /*   method-1   */
-    display: none;      /*   method-2   */
+	//border: 1px solid red;                    /* 標示用，排版完記得拿掉 */
+	background-color: rgba(255,255,255,.9);   /* 背景半透明 */
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;    
+
+	text-align: center;
+	padding: 25px 10px;
+
+	//opacity: 0;         /*   method-1   */
+	display: none;      /*   method-2   */
 }
 
 
 .item-info:hover {
-  //opacity: 1;  /*   method-1   */
+	//opacity: 1;  /*   method-1   */
 }
 
 .item:hover .item-info {
-  display: block;    /*   method-2   */
+	display: block;    /*   method-2   */
 }
 
 .item img{
-    width: 100%    
+	width: 100%    
 }
 
 /* ----------contact me 區塊3 form--------------  */
 #contact-me {
-  //border: 1px solid green;  /* 標示用，完成後刪除 */
+	//border: 1px solid green;  /* 標示用，完成後刪除 */
 }
 
 form.contact-form {
-  //border: 1px solid red;  /* 標示用，完成後刪除 */
-  width: 50%;
+	//border: 1px solid red;  /* 標示用，完成後刪除 */
+	width: 50%;
   margin: 0 auto;
 }
     
     
 .form-row {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }    
 
 .form-row input, .form-row textarea {
-  border-radius: 3px;
-  width: 100%;    /* 也順便換航 */
-  border: 1px solid #D6D9DC;
-  padding: 7px;
+	border-radius: 3px;
+	width: 100%;    /* 也順便換行 */
+	border: 1px solid #D6D9DC;
+	padding: 7px;
 }
 
 
 .form-row textarea {
-  resize: none;
-  height: 4em;
+	resize: none;
+	height: 4em;
 }
 
 .form-row button {
   border: none;
   border-radius: 3px;
   padding: 10px 15px;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .form-row button[type="sumbit"] {
-  background-color: #5995DA;
-  color: #FFFFFF;
+	background-color: #5995DA;
+	color: #FFFFFF;
 }
 
 
 .form-row button[type="reset"] {
- background-color:bisque; 
- color: #000000;
+	background-color:bisque; 
+	color: #000000;
 }
 
 .form-row button:hover {
-  background-color: #76AEED;
+	background-color: #76AEED;
 }
 
 .form-row button:active {
@@ -250,5 +247,95 @@ h1 {
 /* ---------- #my-work 圖片置中： --------------  */
 
 #my-work-gallery {
-    text-align: center;
+	text-align: center;
+}
+
+
+/*
+  以上原始 css code
+*/
+
+/*
+  以下RWD css code
+*/
+
+@media screen and (min-width: 1024px) {     /* --RWD1-- */
+	.menu-button,
+ 	.menu-button-checkbox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+   /* --RWD1-- */
+	.container {
+    width: auto;
+  }
+
+  .menu-button {   
+    float: right;
+    font-size: 25px;
+    line-height: 40px; /* 按鈕的長：line-height 設定為 40px */
+    color: white;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }	
+	
+	 /* --RWD3-- */
+  .menu-button-checkbox {
+		opacity: 0;  /* --RWD4-- */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+  }
+
+  .menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+	
+	
+   /* --RWD2-- */
+	.menu {
+		display: none; /* --RWD3-- */
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+    //background: red;
+		background: transparent;
+  }
+	
+ .menu li {
+    border: 0;
+    border-radius: 0;
+  }	
+
+  /* --RWD5 取消手機版左圖右文-- */
+	#my-avatar {
+		width: 100%; 
+	}
+
+	#my-avatar img {
+		display: block;
+		margin: 15px auto;
+	}
+	
+	 /* --RWD6 5*img item */
+	.item {
+    max-width: 100%;
+  }
+
+	/* --RWD6 form % */
+	 form.contact-form {
+    width: 80%;
+  }
+  /*
+    往下繼續手機版 css code
+  */
 }
